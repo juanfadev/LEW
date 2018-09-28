@@ -1,0 +1,254 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+html { height: 100%; }
+body { 
+  background: #f0f0f0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #313131;
+  font-size: 62.5%; 
+  line-height: 1; 
+}
+ 
+::selection { background: #a4dcec; }
+ 
+br { display: block; line-height: 2.2em; } 
+ 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+ 
+/** page structure **/
+#w {
+  display: block;
+  width: 750px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+ 
+main {
+  display: block;
+  background: #fff;
+  padding: 25px 20px;
+  padding-bottom: 35px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+#topbar {
+    background: #323b40;
+    color: aqua;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    height: 36px;
+    overflow: hidden;
+    -webkit-transition: height 0.5s linear;
+    -moz-transition: height 0.5s linear;
+    transition: height 0.5s linear;
+  }
+  #topbar a {
+    color: inherit;
+    font-size:1.3em;
+    line-height: 1.25em;
+    text-decoration: none;
+    opacity: 0.5;
+    font-weight: bold;
+  }
+  #topbar a:hover {
+    opacity: 1;
+  }
+   
+  #tophiddenbar {
+    display: block;
+    width: 100%;
+    background: inherit;
+    color: #0ebac7;
+    font-weight: bold;
+    padding: 8px 0; 
+    font-size: 1.3em;
+    text-align: center;
+    text-shadow: 1px 1px 0 #444;
+  }
+  #tophiddenbar a {
+    color: inherit;
+    font-size: 1.0em;
+    text-decoration: none;
+    opacity: 0.5;
+    text-shadow: none;
+  }
+  #tophiddenbar a:hover { opacity: 1; }
+   
+  #topbar:hover { height: 60px; }
+
+  #tophiddenbar ul {
+      display: inline-flex;
+  }
+  ul li {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+
+
+  /*Desde aqui tenemos el estilo del footer*/
+
+
+  footer {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+  footer object{
+      width: 100%;
+    }
+  footer div.social-media-links {
+    background: #323b40;
+    overflow: hidden;
+    padding-bottom: 2em;
+    text-align: center;
+  }
+  footer div.social-media-links ul {
+    margin: 0;
+    padding: 0;
+  }
+  footer div.social-media-links li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  footer div.social-media-links a {
+    border-bottom: 0px solid rgba(0, 0, 0, 0.95);
+    border-radius: 4px;
+    box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0), 0 6px 8px rgba(0, 0, 0, 0), 0 24px 24px rgba(0, 0, 0, 0), 0 36px 36px rgba(0, 0, 0, 0), 0 64px 64px rgba(0, 0, 0, 0), 0 64px 128px rgba(0, 0, 0, 0), 0 120px 0 rgba(0, 0, 0, 0), 0 86px 8px 6px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 40px;
+    padding: 30px;
+    position: relative;
+    transition: 0.2s ease-in;
+    width: 40px;
+  }
+  footer div.social-media-links a svg {
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    height: 40px;
+    width: 40px;
+  }
+  footer div.social-media-links a svg.glow path,
+  footer div.social-media-links a svg.glow circle {
+    fill: rgba(0, 0, 0, 0);
+  }
+  footer div.social-media-links a svg path,
+  footer div.social-media-links a svg circle {
+    fill: #0096a1;
+    transition: 0.2s ease-in;
+  }
+  footer div.social-media-links a:hover {
+    transform: translateY(-4px);
+    box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.05), 0 24px 24px rgba(0, 0, 0, 0.05), 0 36px 36px rgba(0, 0, 0, 0.05), 0 64px 64px rgba(0, 0, 0, 0.15), 0 64px 128px rgba(0, 0, 0, 0.15), 0 86px 8px 6px rgba(14, 186, 199, 0.25), 0 83px 4px 0px rgba(14, 186, 199, 0.95);
+  }
+  footer div.social-media-links a:hover svg.glow {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><f…ter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
+    filter: blur(2px);
+  }
+  footer div.social-media-links a:hover svg.glow path,
+  footer div.social-media-links a:hover svg.glow circle {
+    fill: rgba(14, 186, 199, 0.6);
+  }
+  footer div.social-media-links a:hover svg path,
+  footer div.social-media-links a:hover svg circle {
+    fill: #0ebac7;
+  }
+
+
+
+  /*A partir de aqui está el carousel
+  */
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+  transition: color 150ms;
+  color: #95a5a6;
+  text-decoration: none;
+}
+a:hover {
+  color: #7f8c8d;
+  text-decoration: underline;
+}
+.contain {
+  width: 100%;
+}
+.row {
+  overflow: auto;
+  width: 100%;
+}
+.row__inner {
+  transition: 450ms transform;
+  font-size: 0;
+  white-space: nowrap;
+  margin: 70.3125px 0;
+  padding-bottom: 10px;
+}
+.tile {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 140.625px;
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+}
+.tile__img {
+  width: 250px;
+  height: 140.625px;
+  object-fit: cover;
+}
+.tile__details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  opacity: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  transition: 450ms opacity;
+}
+.tile__details:after,
+.tile__details:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: #000;
+}
+.tile:hover .tile__details {
+  opacity: 1;
+}
+.tile__title {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+.row__inner:hover {
+  transform: translate3d(-62.5px, 0, 0);
+}
+.row__inner:hover .tile {
+  opacity: 0.3;
+}
+.row__inner:hover .tile:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+.tile:hover ~ .tile {
+  transform: translate3d(125px, 0, 0);
+}

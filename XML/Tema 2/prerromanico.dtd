@@ -1,0 +1,38 @@
+<!ELEMENT monuments (monument+)>
+<!ELEMENT monument (name,type,year?,builders?,description, status?, location, gallery*, rating, visit, showed_by, bibliography)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT builders (builder+)>
+<!ELEMENT builder (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT location (municipality, address?, coordenates)>
+<!ELEMENT municipality (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT coordenates (latitude, longitude, altitude)>
+<!ELEMENT latitude (#PCDATA)>
+<!ELEMENT longitude (#PCDATA)>
+<!ELEMENT altitude (#PCDATA)>
+<!ELEMENT gallery (photo+| video+)>
+<!ELEMENT photo (#PCDATA)>
+<!ELEMENT video (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT visit (period+)>
+<!ELEMENT period (day+)>
+<!ELEMENT day (hour+)>
+<!ELEMENT hour (#PCDATA)>
+<!ELEMENT showed_by (#PCDATA)>
+<!ELEMENT bibliography (website+)>
+<!ELEMENT website (#PCDATA)>
+<!ATTLIST monument id ID #REQUIRED>
+<!ATTLIST period start CDATA #REQUIRED>
+<!ATTLIST period end CDATA #REQUIRED>
+<!ATTLIST day start CDATA #REQUIRED>
+<!ATTLIST day end CDATA #REQUIRED>
+<!ATTLIST hour start CDATA #REQUIRED>
+<!ATTLIST hour end CDATA #REQUIRED>
+<!ATTLIST photo uri CDATA #REQUIRED>
+<!ATTLIST photo name CDATA #IMPLIED>
+<!ATTLIST video uri CDATA #REQUIRED>
+<!ATTLIST video name CDATA #IMPLIED>

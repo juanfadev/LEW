@@ -1,0 +1,145 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="builder" type="xs:string"/>
+    <xs:element name="latitude" type="xs:float"/>
+    <xs:element name="longitude" type="xs:float"/>
+    <xs:element name="altitude" type="xs:short"/>
+    <xs:element name="municipality" type="xs:string"/>
+    <xs:element name="address" type="xs:string"/>
+    <xs:element name="website" type="xs:anyURI"/>
+    <xs:element name="name" type="xs:string"/>
+    <xs:element name="type" type="xs:string"/>
+    <xs:element name="year" type="xs:string"/>
+    <xs:element name="description" type="xs:string"/>
+    <xs:element name="status" type="xs:string"/>
+    <xs:element name="rating">
+        <xs:simpleType>
+            <xs:restriction base="xs:float">
+                <xs:minInclusive value="0"/>
+                <xs:maxInclusive value="120"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="showed_by" type="xs:string"/>
+    <xs:element name="coordenates">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="latitude"/>
+                <xs:element ref="longitude"/>
+                <xs:element ref="altitude"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="photo">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:string" name="name" use="optional"/>
+                    <xs:attribute type="xs:anyURI" name="uri" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="video">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:string" name="name" use="optional"/>
+                    <xs:attribute type="xs:string" name="uri" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="hour">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:time" name="start" use="required"/>
+                    <xs:attribute type="xs:time" name="end" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="day">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="hour" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="start" use="required"/>
+            <xs:attribute type="xs:string" name="end" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="period">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="day" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="start" use="required"/>
+            <xs:attribute type="xs:string" name="end" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="builders">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="builder" maxOccurs="unbounded" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="location">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="municipality"/>
+                <xs:element ref="address"/>
+                <xs:element ref="coordenates"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="gallery">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element ref="photo" maxOccurs="unbounded" minOccurs="1"/>
+                <xs:element ref="video" maxOccurs="unbounded" minOccurs="1"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="visit">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="period" maxOccurs="unbounded" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="bibliography">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="website" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="monument">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"/>
+                <xs:element ref="type"/>
+                <xs:element ref="year"/>
+                <xs:element ref="builders"/>
+                <xs:element ref="description"/>
+                <xs:element ref="status"/>
+                <xs:element ref="location"/>
+                <xs:element ref="gallery" maxOccurs="unbounded" minOccurs="0"/>
+                <xs:element ref="rating"/>
+                <xs:element ref="visit"/>
+                <xs:element ref="showed_by"/>
+                <xs:element ref="bibliography"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="monuments">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="monument" maxOccurs="unbounded" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

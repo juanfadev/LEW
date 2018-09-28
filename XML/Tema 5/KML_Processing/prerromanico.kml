@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <Placemark>
+      <name>Santa María del Naranco</name>
+      <description>Se trata de un palacio de recreo de veinte metros de largo por unos seis de ancho y once de altura, construido con sillares pequeños muy bien escuadrados en hiladas horizontales, con dos naves superpuestas, cubiertas ambas por bóvedas de toba sobre arcos perpiaños, situado en un entorno en el que existían además la iglesia de San Miguel de Lillo y otra serie de edificios de servicio hoy desaparecidos. Este tipo de estructura era ya muy conocido en el arte prerrománico español, con antecedentes tan importantes como el Mausoleo de La Alberca, Santa Eulalia de Bóveda, la cripta de San Antolín de Palencia y, ya en el periodo asturiano, la Cámara Santa de la Catedral de Oviedo. Todos ellos eran edificios de doble bóveda y excepto en el primero, del que sólo quedan restos, en los demás nos ha llegado la nave inferior casi intacta, pero este es el único caso en que nos ha llegado también completa la superior, debido no sólo a que Asturias no sufrió invasiones ni estuvo en primera línea de alguna guerra como los tres primeros, sino también por su exquisita calidad de diseño y construcción, sorprendente en un edificio del siglo IX.</description>
+      <Point>
+        <coordinates>-5.8682997,43.379167,527</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Iglesia San Julián de los Prados</name>
+      <description>Construida a base de mampostería de piedras pequeñas con sillares en las esquinas, tiene planta basilical de tres naves separadas por arcos de medio punto en ladrillo sobre pilares cuadrados, con tres ábsides, pórtico a los pies y una gran nave de transepto, tan ancha y de mayor altura que la nave central, que tiene adosados un compartimento a cada lado. Esta nave está separada de la central por un muro en el que se abren un arco de triunfo y dos ventanas, estructura que nos recuerda una característica que ya encontramos en la fase de transición visigoda: la búsqueda de una forma de utilizar plantas basilicales añadiendo algún tipo de transepto, necesario por las características del culto en esa época. Su planta basilical, el pórtico de entrada, la carencia de torre de crucero, la búsqueda de una forma de separar las naves de la cabecera mediante un crucero atípico e incluso la sensación de horizontalidad que produce la relación de su anchura respecto a su altura, hacen que esta iglesia, aunque con grandes diferencias como la utilización de pilares en los arcos de separación de las naves y la forma del crucero y la cabecera, nos recuerde a San Juan de Baños y nos haga pensar en cómo consideraríamos la relación entre el arte asturiano y el visigodo si conociéramos algunos de los monumentos que existieron en las grandes ciudades en esa fase.</description>
+      <Point>
+        <coordinates>-5.8394107,43.3675,570</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cámara Santa</name>
+      <description>La Cámara Santa de la Catedral de Oviedo luce luminosa y espléndida desde su última restauración, que ha hecho posible que desde el pasado catorce de abril muestre al público toda su belleza medieval, que la convierte en un símbolo de Asturias y en un significativo reclamo religioso, cultural y turístico.
+
+            Fundada como capilla palatina por un rey asturiano, que la historia nombra como Alfonso II el Casto, y que vivió y amó en el siglo IX, la Cámara Santa de la Catedral de Oviedo ha sido testigo activo de miles de historias y avatares: punto de encuentro de peregrinos, devotos, viajeros, aventureros y hasta revolucionarios. Para todos ellos, de una u otra forma, ha sido referencia ineludible. Ha reído, sentido, llorado, latido, rezado, pensado al mismo tiempo que la Humanidad.</description>
+      <Point>
+        <coordinates>-5.858409,43.3622376,2737</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Santianes de Pravia</name>
+      <description>El resultado actual, después de tantas transformaciones, nos presenta una iglesia de planta basilical de tres naves, la central de doble anchura que las laterales y separada de éstas por arquerías de tres arcos aparejados en ladrillo sobre pilares de sección cuadrada, con un transepto algo más ancho que las naves, dividido también en tres áreas separadas por grandes arcos de medio punto, los tres ábsides de planta rectangular que se construyeron en el siglo XVII, siendo el del sur algo más ancho que ese lado del nuevo transepto, y un pórtico a los pies, también dividido en
+
+            tres partes, en el que la central fue utilizada como panteón real, y sobre él una tribuna. Pero si tenemos en cuenta la descripción del jesuita Luís Alfonso de Carvallo a principios del siglo XVII y la información obtenida en las excavaciones de finales del XX, no hay duda de que existen demasiados motivos para creer que hay grandes diferencias entre una reconstrucción, quizá excesivamente inspirada en las iglesias conocidas del periodo de Alfonso II, medio siglo posteriores, y su estructura original.</description>
+      <Point>
+        <coordinates>-6.1013607,43.5019444,820</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Santa Cristina de Lena</name>
+      <description>De reducidas dimensiones, su planta está formada por una nave rectangular de 10 por 6m, que tiene adosados un ábside en el fondo oriental, un pórtico en el occidental y dos cámaras de menor altura que los anteriores en el centro de los lados mayores. Dispone de una única puerta de gran tamaño en el pórtico, entre dos contrafuertes y terminada en un arco de medio punto hecho a base de grandes dovelas irregulares sobre dos columnas entregas y adintelada en su parte interior. Su aspecto exterior se asemeja al de las iglesias cruciformes visigodas, pero la existencia de dos contrafuertes en cada uno de los dieciséis planos que conforman su estructura, confieren a este edificio una imagen muy especial.</description>
+      <Point>
+        <coordinates>-5.8166327,43.127222,823</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

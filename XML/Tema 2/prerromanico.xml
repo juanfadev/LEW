@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE monuments SYSTEM "prerromanico.dtd">
+<monuments>
+    <monument id="Naranco">
+        <name>
+            Santa María del Naranco
+        </name>
+        <type>
+            Palacio
+        </type>
+        <year>
+            845
+        </year>
+        <builders>
+            <builder>San Miguel de Lillo</builder>
+            <builder>Ramiro I</builder>
+        </builders>
+        <description>
+            Se trata de un palacio de recreo de veinte metros de largo por unos seis de ancho y once de altura, construido con sillares pequeños muy bien escuadrados en hiladas horizontales, con dos naves superpuestas, cubiertas ambas por bóvedas de toba sobre arcos perpiaños, situado en un entorno en el que existían además la iglesia de San Miguel de Lillo y otra serie de edificios de servicio hoy desaparecidos. Este tipo de estructura era ya muy conocido en el arte prerrománico español, con antecedentes tan importantes como el Mausoleo de La Alberca, Santa Eulalia de Bóveda, la cripta de San Antolín de Palencia y, ya en el periodo asturiano, la Cámara Santa de la Catedral de Oviedo. Todos ellos eran edificios de doble bóveda y excepto en el primero, del que sólo quedan restos, en los demás nos ha llegado la nave inferior casi intacta, pero este es el único caso en que nos ha llegado también completa la superior, debido no sólo a que Asturias no sufrió invasiones ni estuvo en primera línea de alguna guerra como los tres primeros, sino también por su exquisita calidad de diseño y construcción, sorprendente en un edificio del siglo IX.
+        </description>
+        <status>
+            Muy bueno
+        </status>
+        <location>
+            <municipality>
+                Oviedo (Asturias)
+            </municipality>
+            <address>
+                Monte Naranco, s/n, 33012 Oviedo, Asturias
+            </address>
+            <coordenates>
+                <latitude>43.379167</latitude>
+                <longitude>-5.8682997</longitude>
+                <altitude>527</altitude>
+            </coordenates>
+        </location>
+        <gallery>
+            <photo name="Santa María del Naranco Outside" uri="http://www.turismo-prerromanico.com/files/content/MSMNARANC/MSMNARANC3.jpg"/>
+            <photo name="Santa María del Naranco Plano" uri="http://www.turismo-prerromanico.com/files/content/MSMNARANC/MSMNARANCPLAN2.jpg"/>
+        </gallery>
+        <rating>
+            8.24
+        </rating>
+        <visit>
+            <period start="1 Octubre" end="31 Marzo">
+                <day start="Martes" end="Sabado">
+                    <hour start="10" end="13"/>
+                    <hour start="15" end="17"/>
+                </day>
+                <day start="Domingo" end="Lunes">
+                    <hour start="10" end="13"/>
+                </day>
+            </period>
+            <period start="1 Abril" end="30 Septiembre">
+                <day start="Martes" end="Sabado">
+                    <hour start="9:30" end="13:30"/>
+                    <hour start="15:30" end="19:30"/>
+                </day>
+                <day start="Domingo" end="Lunes">
+                    <hour start="10" end="13"/>
+                </day>
+            </period>
+        </visit>
+        <showed_by>
+            Párroco
+        </showed_by>
+        <bibliography>
+            <website>
+                http://www.turismo-prerromanico.com/monumento/santa-maria-del-naranco-20130115191257/
+            </website>
+            <website>
+                https://www.turismoasturias.es/descubre/cultura/prerromanico/santa-maria-del-naranco
+            </website>
+        </bibliography>
+    </monument>
+    <monument id="LosPrados">
+        <name>
+            Iglesia San Julián de los Prados
+        </name>
+        <type>
+            Iglesia
+        </type>
+        <year>
+            Siglo IX
+        </year>
+        <builders>
+            <builder>Alfonso II</builder>
+        </builders>
+        <description>
+            Construida a base de mampostería de piedras pequeñas con sillares en las esquinas, tiene planta basilical de tres naves separadas por arcos de medio punto en ladrillo sobre pilares cuadrados, con tres ábsides, pórtico a los pies y una gran nave de transepto, tan ancha y de mayor altura que la nave central, que tiene adosados un compartimento a cada lado. Esta nave está separada de la central por un muro en el que se abren un arco de triunfo y dos ventanas, estructura que nos recuerda una característica que ya encontramos en la fase de transición visigoda: la búsqueda de una forma de utilizar plantas basilicales añadiendo algún tipo de transepto, necesario por las características del culto en esa época. Su planta basilical, el pórtico de entrada, la carencia de torre de crucero, la búsqueda de una forma de separar las naves de la cabecera mediante un crucero atípico e incluso la sensación de horizontalidad que produce la relación de su anchura respecto a su altura, hacen que esta iglesia, aunque con grandes diferencias como la utilización de pilares en los arcos de separación de las naves y la forma del crucero y la cabecera, nos recuerde a San Juan de Baños y nos haga pensar en cómo consideraríamos la relación entre el arte asturiano y el visigodo si conociéramos algunos de los monumentos que existieron en las grandes ciudades en esa fase.
+        </description>
+        <status>
+            Muy Bueno
+        </status>
+        <location>
+            <municipality>
+                Oviedo (Asturias)
+            </municipality>
+            <address>
+                Plaza de Santullano, Oviedo
+            </address>
+            <coordenates>
+                <latitude>43.3675</latitude>
+                <longitude>-5.8394107</longitude>
+                <altitude>570</altitude>
+            </coordenates>
+        </location>
+        <gallery>
+            <photo name="Exterior" uri="http://www.turismo-prerromanico.com/files/content/MSJPRADOS/MSJPRADOS1.jpg"/>
+            <photo name="Plano" uri="http://www.turismo-prerromanico.com/files/content/MSJPRADOS/MSJPRADOSPLAN1.jpg"/>
+        </gallery>
+        <gallery>
+            <video name="San Julian 1" uri="https://www.youtube.com/watch?v=fMCOnopVB6c"/>
+            <video name="San Julian 2" uri="https://www.youtube.com/watch?v=U5jqWG97oUs"/>
+        </gallery>
+        <rating>
+            7.2
+        </rating>
+        <visit>
+            <period start="1 Octubre" end="30 Abril">
+                <day start="Lunes" end="Sabado">
+                    <hour start="10" end="12:30"/>
+                    <hour start="15" end="17"/>
+                </day>
+            </period>
+            <period start="1 Mayo" end="30 Junio">
+                <day start="Martes" end="Sabado">
+                    <hour start="10" end="12:30"/>
+                    <hour start="16" end="18"/>
+                </day>
+                <day start="Lunes" end="Lunes">
+                    <hour start="10" end="12:30"/>
+                </day>
+            </period>
+            <period start="1 Julio" end="30 Septiembre">
+                <day start="Martes" end="Viernes">
+                    <hour start="9:30" end="13"/>
+                    <hour start="16" end="18"/>
+                </day>
+                <day start="Lunes" end="Lunes">
+                    <hour start="10" end="13"/>
+                </day>
+                <day start="Sabado" end="Sabado">
+                    <hour start="9:30" end="12:30"/>
+                </day>
+            </period>
+        </visit>
+        <showed_by>
+            Mª Isabel Díaz
+        </showed_by>
+        <bibliography>
+            <website>https://www.turismoasturias.es/descubre/cultura/prerromanico/iglesia-de-san-julian-de-los-prados</website>
+            <website>http://www.turismo-prerromanico.com/monumento/san-julin-de-los-prados-20130115114536/#ad-image-0</website>
+        </bibliography>
+    </monument>
+    <monument id="CamaraSanta">
+        <name>
+            Cámara Santa
+        </name>
+        <type>
+            Capillas
+        </type>
+        <year>
+            Siglo IX
+        </year>
+        <builders>
+            <builder>Alfonso II</builder>
+        </builders>
+        <description>
+            La Cámara Santa de la Catedral de Oviedo luce luminosa y espléndida desde su última restauración, que ha hecho posible que desde el pasado catorce de abril muestre al público toda su belleza medieval, que la convierte en un símbolo de Asturias y en un significativo reclamo religioso, cultural y turístico.
+
+            Fundada como capilla palatina por un rey asturiano, que la historia nombra como Alfonso II el Casto, y que vivió y amó en el siglo IX, la Cámara Santa de la Catedral de Oviedo ha sido testigo activo de miles de historias y avatares: punto de encuentro de peregrinos, devotos, viajeros, aventureros y hasta revolucionarios. Para todos ellos, de una u otra forma, ha sido referencia ineludible. Ha reído, sentido, llorado, latido, rezado, pensado al mismo tiempo que la Humanidad.
+        </description>
+        <status>
+            Muy bueno
+        </status>
+        <location>
+            <municipality>
+                Oviedo (Asturias)
+            </municipality>
+            <address>
+                Plaza Alfonso II El Casto S/N, 33003, Oviedo (Asturias)
+            </address>
+            <coordenates>
+                <latitude>43.3622376</latitude>
+                <longitude>-5.858409</longitude>
+                <altitude>2737</altitude>
+            </coordenates>
+        </location>
+        <gallery>
+            <photo name="Catedral" uri="http://catedraldeoviedo.com/wp-content/uploads/2015/06/camara_santa_cdc.jpg"/>
+        </gallery>
+        <rating>
+        8
+        </rating>
+        <visit>
+            <period start="1 Marzo" end="31 Mayo">
+                <day start="Lunes" end="Viernes">
+                    <hour start="10" end="14"/>
+                    <hour start="16" end="19"/>
+                </day>
+                <day start="Sabado" end="Sabado">
+                    <hour start="10" end="14"/>
+                    <hour start="16" end="18"/>
+                </day>
+            </period>
+            <period start="1 Junio" end="30 Junio">
+                <day start="Lunes" end="Viernes">
+                    <hour start="10" end="14"/>
+                    <hour start="16" end="20"/>
+                </day>
+                <day start="Sabado" end="Sabado">
+                    <hour start="10" end="14"/>
+                    <hour start="16" end="18"/>
+                </day>
+            </period>
+            <period start="1 Julio" end="31 Agosto">
+                <day start="Lunes" end="Viernes">
+                    <hour start="10" end="20"/>
+                </day>
+                <day start="Sabado" end="Sabado">
+                    <hour start="10" end="18"/>
+                </day>
+            </period>
+            <period start="1 September" end="30 September">
+                <day start="Lunes" end="Viernes">
+                    <hour start="10" end="19"/>
+                </day>
+                <day start="Sabado" end="Sabado">
+                    <hour start="10" end="18"/>
+                </day>
+            </period>
+            <period start="1 Octubre" end="31 Octubre">
+                <day start="Lunes" end="Viernes">
+                    <hour start="10" end="14"/>
+                    <hour start="16" end="19"/>
+                </day>
+                <day start="Sabado" end="Sabado">
+                    <hour start="10" end="14"/>
+                    <hour start="16" end="18"/>
+                </day>
+            </period>
+            <period start="1 Noviembre" end="28 Febrero">
+                <day start="Lunes" end="Sabado">
+                    <hour start="10" end="14"/>
+                    <hour start="16" end="18"/>
+                </day>
+            </period>
+        </visit>
+        <showed_by>
+            Guías del Cabildo Catedralicio
+        </showed_by>
+        <bibliography>
+            <website>http://catedraldeoviedo.com/camara-santa/</website>
+        </bibliography>
+    </monument>
+    <monument id="Pravia">
+        <name>
+            Santianes de Pravia
+        </name>
+        <type>
+            Iglesia
+        </type>
+        <year>
+            Siglo VIII
+        </year>
+        <builders>
+            <builder>
+                Rey Silo
+            </builder>
+        </builders>
+        <description>
+            El resultado actual, después de tantas transformaciones, nos presenta una iglesia de planta basilical de tres naves, la central de doble anchura que las laterales y separada de éstas por arquerías de tres arcos aparejados en ladrillo sobre pilares de sección cuadrada, con un transepto algo más ancho que las naves, dividido también en tres áreas separadas por grandes arcos de medio punto, los tres ábsides de planta rectangular que se construyeron en el siglo XVII, siendo el del sur algo más ancho que ese lado del nuevo transepto, y un pórtico a los pies, también dividido en
+
+            tres partes, en el que la central fue utilizada como panteón real, y sobre él una tribuna. Pero si tenemos en cuenta la descripción del jesuita Luís Alfonso de Carvallo a principios del siglo XVII y la información obtenida en las excavaciones de finales del XX, no hay duda de que existen demasiados motivos para creer que hay grandes diferencias entre una reconstrucción, quizá excesivamente inspirada en las iglesias conocidas del periodo de Alfonso II, medio siglo posteriores, y su estructura original.
+        </description>
+        <status>
+            Reconstruido
+        </status>
+        <location>
+            <municipality>
+                Pravia (Asturias)
+            </municipality>
+            <address>
+                33129, Asturias
+            </address>
+            <coordenates>
+                <latitude>
+                    43.5019444
+                </latitude>
+                <longitude>
+                    -6.1013607
+                </longitude>
+                <altitude>820</altitude>
+            </coordenates>
+        </location>
+        <gallery>
+            <photo name="" uri="http://www.turismo-prerromanico.com/files/content/MSANTIANE/MSANTIANE1.jpg"/>
+            <photo name="" uri="http://www.turismo-prerromanico.com/wp-content/uploads/2016/06/20130122202905.jpg"/>
+        </gallery>
+        <rating>
+            9.5
+        </rating>
+        <visit>
+            <period start="1 Enero" end="31 Diciembre">
+                <day start="Martes" end="Domingo">
+                    <hour start="11" end="13"/>
+                    <hour start="16" end="18"/>
+                </day>
+                <day start="Martes" end="Sabado">
+                    <hour start="13:15" end="14:30"/>
+                    <hour start="18:15" end="19:30"/>
+                </day>
+            </period>
+        </visit>
+        <showed_by>
+            Oficina de Turismo de Pravia
+        </showed_by>
+        <bibliography>
+            <website>http://www.turismo-prerromanico.com/monumento/santianes-de-pravia-20130114172929/</website>
+        </bibliography>
+    </monument>
+    <monument id="Lena">
+        <name>
+            Santa Cristina de Lena
+        </name>
+        <type>
+            Iglesia
+        </type>
+        <year>
+            Siglo IX
+        </year>
+        <builders>
+            <builder>
+                Ramiro I
+            </builder>
+        </builders>
+        <description>
+            De reducidas dimensiones, su planta está formada por una nave rectangular de 10 por 6m, que tiene adosados un ábside en el fondo oriental, un pórtico en el occidental y dos cámaras de menor altura que los anteriores en el centro de los lados mayores. Dispone de una única puerta de gran tamaño en el pórtico, entre dos contrafuertes y terminada en un arco de medio punto hecho a base de grandes dovelas irregulares sobre dos columnas entregas y adintelada en su parte interior. Su aspecto exterior se asemeja al de las iglesias cruciformes visigodas, pero la existencia de dos contrafuertes en cada uno de los dieciséis planos que conforman su estructura, confieren a este edificio una imagen muy especial.
+        </description>
+        <status>
+            Muy Bueno
+        </status>
+        <location>
+            <municipality>
+                La Cobertoira, Lena (Asturias)
+            </municipality>
+            <address>
+                Caserio Santa Cristina, 3, 33637 Santa Cristina de Lena, Asturias
+            </address>
+            <coordenates>
+                <latitude>43.127222</latitude>
+                <longitude>-5.8166327</longitude>
+                <altitude>823</altitude>
+            </coordenates>
+        </location>
+        <gallery>
+            <photo name="Lena" uri="http://www.turismo-prerromanico.com/files/content/MSCLENA/MSCLENA1.jpg"/>
+        </gallery>
+        <rating>
+            8.8
+        </rating>
+        <visit>
+            <period start="1 Abril" end="31 Octubre">
+                <day start="Martes" end="Domingo">
+                    <hour start="11" end="13"/>
+                    <hour start="16:30" end="18:30"/>
+                </day>
+            </period>
+            <period start="1 Noviembre" end="31 Marzo">
+                <day start="Martes" end="Sabado">
+                    <hour start="11" end="13"/>
+                    <hour start="16" end="18"/>
+                </day>
+            </period>
+        </visit>
+        <showed_by>
+            Aula Didáctica del Prerrománico Asturiano
+        </showed_by>
+        <bibliography>
+            <website>http://www.turismo-prerromanico.com/monumento/santa-cristina-de-lena-20130115222639/#ad-image-0</website>
+        </bibliography>
+    </monument>
+</monuments>
