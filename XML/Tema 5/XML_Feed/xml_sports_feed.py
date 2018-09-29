@@ -2,7 +2,15 @@ import requests
 import xmltodict
 from lxml import etree as ET
 import sys
+from reportlab.platypus import SimpleDocTemplate, Paragraph, PageBreak
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.units import mm, inch
+import datetime
 
+sample_style_sheet = getSampleStyleSheet()
+
+PAGESIZE = (140 * mm, 216 * mm)
+BASE_MARGIN = 5 * mm
 
 
 def main():
@@ -14,10 +22,23 @@ def main():
     with open('feed.xml', encoding='utf-8') as fd:
         doc = xmltodict.parse(fd.read(), encoding='utf-8', dict_constructor = dict)
 
-        createNewXML(doc)
+        my_doc = SimpleDocTemplate(
+            'resumenSegundaDivision'+datetime.datetime.now().strftime('%Y-%m-%d-%H_%M_%S') + '.pdf',
+            pagesize=PAGESIZE,
+            topMargin=BASE_MARGIN,
+            leftMargin=BASE_MARGIN,
+            rightMargin=BASE_MARGIN,
+            bottomMargin=BASE_MARGIN
+        )
+        paragraphs = []
+        
+        createNewXML(doc, paragraphs)
+
+        my_doc.build(paragraphs)
     
 
-def createNewXML(input_xml):
+def createNewXML(input_xml, paragraphs):
+    paragraphs.extend([Paragraph("Segunda División", sample_style_sheet['Heading1'])])
     # create the file structure
     root = input_xml['rss']['channel']
     feed = ET.Element('feed')
@@ -25,6 +46,7 @@ def createNewXML(input_xml):
     feed.set('link', root['link'])
     feed.set('published', root['pubDate'])
     feed.set('lang', root['language'])
+    paragraphs.extend([Paragraph(root['title'], sample_style_sheet['Heading2'])])
     copyright = ET.SubElement(feed, 'copyright')
     copyright.text = root['copyright']
     image = ET.SubElement(feed,'image')
@@ -46,15 +68,11 @@ def createNewXML(input_xml):
         for c in i['category']:
             category = ET.SubElement(categories, 'category')
             category.text = c
-
-    print (ET.tostring(feed, encoding="utf-8"))
+        paragraphs.extend([Paragraph(i['title'], sample_style_sheet['Heading3'])])
+        paragraphs.extend([Paragraph(i['description'], sample_style_sheet['BodyText'])])
+        
     # create a new XML file with the results
-    ET.ElementTree(feed).write('segunda_division.xml',encoding="UTF-8",xml_declaration=True) 
+    ET.ElementTree(feed).write('segunda_division.xml',encoding="UTF-8",xml_declaration=True, pretty_print=True) 
     
-
-
-    
-
-
 if __name__ == '__main__':
   main()
