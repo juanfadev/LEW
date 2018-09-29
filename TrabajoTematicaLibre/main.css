@@ -1,4 +1,5 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html { height: 100%; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -6,10 +7,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline;
   outline: none;
-  text-size-adjust: 100%;
   box-sizing: border-box;
 }
-html { height: 100%; }
 body { 
   background: #f0f0f0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -17,43 +16,86 @@ body {
   font-size: 62.5%; 
   line-height: 1; 
 }
- 
+
+
+/* Fonts */ 
+body, input, textarea, select{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .heading{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0 0 20px 0;
+  line-height: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 24px;
+}
+h2, h3, h4, h5, h6, .heading{
+  font-size: 22px;
+}
+
+main, section {
+  font-size: 14px;
+}
+
+/*Fonts*/
+
+/* Tables */
+
+table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top;}
+table, th{table-layout:auto;}
+table{width:100%; margin-bottom:15px;}
+th, td{padding:5px 8px;}
+td{border-width:0 1px;}
+
+/* Tables*/
+
 ::selection { background: #a4dcec; }
  
 br { display: block; line-height: 2.2em; } 
  
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-ol, ul { list-style: none; }
- 
-/** page structure **/
-#w {
-  display: block;
-  width: 750px;
-  margin: 0 auto;
-  padding-top: 30px;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav { display: block; margin:0; padding:0; }
+
+ul, ol {
+  padding-left: 2em;
+}
+
+#tophiddenbar ul li {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
 }
  
-main {
+/** page structure **/
+.centered {
   display: block;
+  width: 750px;
+  margin: 20px auto;
+  padding-top: 30px;
+  
+}
+ 
+main, section {
+  display: flex;
   background: #fff;
   padding: 25px 20px;
   padding-bottom: 35px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
+
 #topbar {
     background: #323b40;
     color: aqua;
     padding: 10px 0 10px 0;
     text-align: center;
-    height: 36px;
+    height: 50px;
     overflow: hidden;
-    -webkit-transition: height 0.5s linear;
-    -moz-transition: height 0.5s linear;
     transition: height 0.5s linear;
   }
   #topbar a {
     color: inherit;
-    font-size:1.3em;
     line-height: 1.25em;
     text-decoration: none;
     opacity: 0.5;
@@ -70,32 +112,32 @@ main {
     color: #0ebac7;
     font-weight: bold;
     padding: 8px 0; 
-    font-size: 1.3em;
     text-align: center;
     text-shadow: 1px 1px 0 #444;
   }
   #tophiddenbar a {
     color: inherit;
-    font-size: 1.0em;
+    font-size: 18px;
     text-decoration: none;
     opacity: 0.5;
     text-shadow: none;
   }
   #tophiddenbar a:hover { opacity: 1; }
    
-  #topbar:hover { height: 60px; }
+  #topbar:hover { height: 100px; }
 
-  #tophiddenbar ul {
-      display: inline-flex;
+  #tophiddenbar ul{
+    list-style: none;
+    display: inline-flex;
   }
-  ul li {
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+
+  p {
+    padding-bottom: 1em;
   }
+
 
 
   /*Desde aqui tenemos el estilo del footer*/
-
 
   footer {
     bottom: 0;
@@ -167,88 +209,35 @@ main {
 
 
 
-  /*A partir de aqui está el carousel
-  */
+  /* Gallery
+--------------------------------------------------------------------------------------------------------------- */
+#gallery{display:block; width:100%;}
+#gallery figure figcaption{display:block; width:100%; clear:both;}
+#gallery li{margin-bottom:30px;}
+figure{float:left; margin-right: 1em; margin-bottom: 1em;}
 
-a:link,
-a:hover,
-a:active,
-a:visited {
-  transition: color 150ms;
-  color: #95a5a6;
-  text-decoration: none;
+
+/* Form */
+
+form {
+    display: block;
+    width: 750px;
+    margin: 0 auto;
+    
 }
-a:hover {
-  color: #7f8c8d;
-  text-decoration: underline;
+
+input {
+    flex-basis: 3;
+    border-color: #333;
+    width: inherit
 }
-.contain {
-  width: 100%;
+
+textarea {
+    flex-basis: 3;
+    border-color: #333;
+    width: inherit
 }
-.row {
-  overflow: auto;
-  width: 100%;
-}
-.row__inner {
-  transition: 450ms transform;
-  font-size: 0;
-  white-space: nowrap;
-  margin: 70.3125px 0;
-  padding-bottom: 10px;
-}
-.tile {
-  position: relative;
-  display: inline-block;
-  width: 250px;
-  height: 140.625px;
-  margin-right: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  transition: 450ms all;
-  transform-origin: center left;
-}
-.tile__img {
-  width: 250px;
-  height: 140.625px;
-  object-fit: cover;
-}
-.tile__details {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  font-size: 10px;
-  opacity: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
-  transition: 450ms opacity;
-}
-.tile__details:after,
-.tile__details:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: #000;
-}
-.tile:hover .tile__details {
-  opacity: 1;
-}
-.tile__title {
-  position: absolute;
-  bottom: 0;
-  padding: 10px;
-}
-.row__inner:hover {
-  transform: translate3d(-62.5px, 0, 0);
-}
-.row__inner:hover .tile {
-  opacity: 0.3;
-}
-.row__inner:hover .tile:hover {
-  transform: scale(1.5);
-  opacity: 1;
-}
-.tile:hover ~ .tile {
-  transform: translate3d(125px, 0, 0);
+
+button {
+    width: 100px;
 }
