@@ -1,6 +1,7 @@
 import requests
 import xmltodict
-import xml.etree.ElementTree as ET
+from lxml import etree as ET
+import sys
 
 
 
@@ -10,10 +11,11 @@ def main():
     input_file = open('feed.xml', 'wb')
     input_file.write(input_xml)
 
-    doc = xmltodict.parse(input_xml, encoding='utf-8', dict_constructor = dict)
-    mydata = createNewXML(doc)
-    myfile = open("segunda_division.xml", "wb")  
-    myfile.write(mydata)  
+    with open('feed.xml', encoding='utf-8') as fd:
+        doc = xmltodict.parse(fd.read(), encoding='utf-8', dict_constructor = dict)
+
+        createNewXML(doc)
+    
 
 def createNewXML(input_xml):
     # create the file structure
@@ -38,16 +40,17 @@ def createNewXML(input_xml):
         item.set('description', i['description'])
         item.set('creator', i['dc:creator'])
         link =  ET.SubElement(item, 'link')
-        item.text = i['link']
+        link.text = i['link']
+        item.text = ET.CDATA(i['content:encoded'])
         categories = ET.SubElement(item, 'categories')
         for c in i['category']:
             category = ET.SubElement(categories, 'category')
-            category.text = i['category']
+            category.text = c
 
+    print (ET.tostring(feed, encoding="utf-8"))
     # create a new XML file with the results
-    mydata = ET.tostring(feed)  
+    ET.ElementTree(feed).write('segunda_division.xml',encoding="UTF-8",xml_declaration=True) 
     
-    return mydata
 
 
     
