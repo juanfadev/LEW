@@ -33,7 +33,6 @@ def createKML(doc):
         placemarkElement = createPlacemark(kmlDoc, name, latitude, longitude, altitude, description)
         documentElement.appendChild(placemarkElement)
 
-
   return kmlDoc
 
 
