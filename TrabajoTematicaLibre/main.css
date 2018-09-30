@@ -10,6 +10,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   box-sizing: border-box;
 }
 body { 
+  height:100%;
   background: #f0f0f0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #313131;
@@ -37,7 +38,7 @@ h2, h3, h4, h5, h6, .heading{
   font-size: 22px;
 }
 
-main, section {
+section {
   font-size: 14px;
 }
 
@@ -77,12 +78,21 @@ ul, ol {
   
 }
  
-main, section {
+main {
+  overflow: scroll;
+}
+
+
+section {
   display: flex;
   background: #fff;
   padding: 25px 20px;
   padding-bottom: 35px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+section:last-child {
+  margin-bottom: 100px;
 }
 
 #topbar {
@@ -142,7 +152,7 @@ main, section {
   footer {
     bottom: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
     right: 0;
   }
   footer object{
@@ -211,10 +221,12 @@ main, section {
 
   /* Gallery
 --------------------------------------------------------------------------------------------------------------- */
-#gallery{display:block; width:100%;}
-#gallery figure figcaption{display:block; width:100%; clear:both;}
+#gallery{display:block; width:30%;}
+#gallery figure figcaption{display:block; width:100%; clear:both; color: #006363; text-align: center}
 #gallery li{margin-bottom:30px;}
 figure{float:left; margin-right: 1em; margin-bottom: 1em;}
+
+img{width:100%;}
 
 
 /* Form */
@@ -240,4 +252,35 @@ textarea {
 
 button {
     width: 100px;
+}
+
+@media screen and (max-width: 600px){
+  .centered {
+    width: 250px;
+  }
+  form{
+    width: 250px;
+  }
+
+  #topbar {
+    height: 80px;
+  }
+
+  #topbar:hover { height: 150px; }
+
+}
+
+@media screen and (max-width: 900px){
+  .centered {
+    width: 450px;
+  }
+  form{
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1367px){
+  .centered {
+    width: 1050px;
+  }
 }

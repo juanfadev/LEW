@@ -26,94 +26,101 @@
     </header>
     <main>
         <section class="centered">
-            <h2>¿Que es HTTP, HTML y WWW?</h2>
-            
-            <p>HTTP son las siglas en inglés de HiperText Transfer Protocol (en español, protocolo de transferencia de
-                hipertexto).
-                Es un protocolo de red (un protocolo se puede definir como un conjunto de reglas a seguir) que se
-                utiliza para publicar
-                páginas de web o HTML. HTTP es la base sobre la cual se fundamenta Internet o la WWW. La primera
-                versión documentada
-                de HTTP es la versión 0.9, publicada en 1991.</p>
-            <p>HTML (Hypertext Markup Language) no es un lenguaje de programación; es un lenguaje de marcado, que sirve
-                para decirle
-                al navegador la forma de estructurar las páginas web que visitas.</p>
+            <h2>Que es una SPA?</h2>
 
-            <p>En informática, la World Wide Web (WWW) o red informática mundial1​ es un sistema de distribución de
-                documentos de hipertexto
-                o hipermedia interconectados y accesibles vía Internet. Con un navegador web, un usuario visualiza
-                sitios web compuestos
-                de páginas web que pueden contener textos, imágenes, vídeos u otros contenidos multimedia, y navega a
-                través de esas
-                páginas usando hiperenlaces.</p>
-            <p>La Web se desarrolló entre marzo de 1989 y diciembre de 1990.2​3​ por el inglés Tim Berners-Lee con la
-                ayuda del belga
-                Robert Cailliau mientras trabajaban en el CERN en Ginebra, Suiza, y publicado en 1992. Desde entonces,
-                Berners-Lee
-                ha jugado un papel activo guiando el desarrollo de estándares Web (como los lenguajes de marcado con
-                los que se crean
-                las páginas web), y en los últimos años ha abogado por su visión de una Web semántica. </p>
-
-            
+            <p>Aunque no estés familiarizado con su nombre, es más que probable que ya hayas utilizado una aplicación
+                Single-Page Application (SPA). Este formato que se ha popularizado enormemente en los últimos años
+                porque mejora y unifica la experiencia de usuario, independientemente del dispositivo de acceso. En
+                este tipo de aplicaciones web, todo lo que se muestra y se procesa está dentro de la misma página, así
+                que al pasar de una opción a otra no hace falta recargar el navegador y lo normal es que sea un único
+                archivo desde el que se reproduce absolutamente todo.</p>
         </section>
         <section class="centered">
-            <h2>Sir Tim Berners-Lee</h2>
+            <h2>Enfoque clásico: “Page Redraw” o “Multipage Application” </h2>
+
+            <p>Los navegadores web fueron diseñados para este tipo de aplicaciones clásicas, para las cuales existen
+                cantidad de lenguajes y frameworks diseñados específicamente para construir este tipo de aplicaciones.
+                Entre las ventajas que tiene este esquema es que son perfectas para SEO y existen recursos y
+                herramientas que han trabajado con esta arquitectura permitiéndonos medir analíticas webs y haciendo un
+                desarrollo mas controlado.</p>
+            <p>Sin embargo, aunque la gran ventaja es que es la arquitectura más empleada en los desarrollos webs hasta
+                la fecha, han surgido nuevos enfoques para otras necesidades las cuales no requieren las necesidades
+                que tenían las webs clásicas. La gran desventaja de este sistema es la recarga total de la web por cada
+                contenido.</p>
+            <p>Hoy en día hay aplicaciones internas, que quizás no necesiten un sistema de rutas específico que permita
+                una optimización de búsqueda en navegadores, si no lo que se busca es una integración con un servidor
+                permitiendo una carga rápida, datos en tiempo real, notificaciones,etc… Básicamente que sea funcional
+                con la necesidad del cliente.</p>
+
+        </section>
+
+        <section class="centered">
+            <h2>Enfoque nuevo: Varias vistas, no varias páginas o "Single Page Application</h2>
             <div id="gallery">
-                    <figure>
-                        <img width="256" alt="Sir Tim Berners-Lee (cropped)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg/256px-Sir_Tim_Berners-Lee_%28cropped%29.jpg">
-                        <figcaption>
-                            <a title="Paul Clarke [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], from Wikimedia Commons"
-                                href="https://commons.wikimedia.org/wiki/File:Sir_Tim_Berners-Lee_(cropped).jpg">Sir Tim
-                                Berners-Lee</a>
-                        </figcaption>
-                    </figure>
-                </div>
-            <p>
-                    Sir Tim Berners-Lee invented the World Wide Web in 1989.
-    
-                    He is the Director of the World Wide Web Consortium (W3C), a Web standards organization founded in 1994
-                    which develops interoperable technologies (specifications, guidelines, software, and tools) to lead the
-                    Web to its full potential. He is a Director of the World Wide Web Foundation which was launched in 2009
-                    to coordinate efforts to further the potential of the Web to benefit humanity.
-    
-                    A graduate of Oxford University, Sir Tim invented the Web while at CERN, the European Particle Physics
-                    Laboratory, in 1989. He wrote the first web client and server in 1990. His specifications of URIs, HTTP
-                    and HTML were refined as Web technology spread.
-    
-                    He is the 3Com Founders Professor of Engineering in the School of Engineering with a joint appointment
-                    in the Department of Electrical Engineering and Computer Science at the Laboratory for Computer Science
-                    and Artificial Intelligence ( CSAIL) at the Massachusetts Institute of Technology (MIT) where he
-                    co-leads the Decentralized Information Group (DIG). He is also a Professor in the Computer Science
-                    Department at the University of Oxford, UK. He is President of and founded the Open Data Institute in
-                    London.
-    
-                </p>
-                <p>In 2011 he was named to the Board of Trustees of the Ford Foundation, a globally oriented private
-                    foundation with the mission of advancing human welfare. He is President of London's Open Data
-                    Institute.
-    
-                    In 2001 he became a Fellow of the Royal Society. He has been the recipient of several international
-                    awards including the Japan Prize, the Prince of Asturias Foundation Prize, the Millennium Technology
-                    Prize and Germany's Die Quadriga award. In 2004 he was knighted by H.M. Queen Elizabeth and in 2007 he
-                    was awarded the Order of Merit. In 2009 he was elected a foreign associate of the National Academy of
-                    Sciences. He is the author of "Weaving the Web".
-    
-                    On March 18 2013, Sir Tim, along with Vinton Cerf, Robert Kahn, Louis Pouzin and Marc Andreesen, was
-                    awarded the Queen Elizabeth Prize for Engineering for "ground-breaking innovation in engineering that
-                    has been of global benefit to humanity."
-    
-                </p>
-                <p>Sir Tim has promoted open government data globally and spend time fighting for rights such as net
-                    neutrality, privacy and the openness of the Web.
-                    On 4 April 2017, Sir Tim was awarded the ACM A.M. Turing Prize for inventing the World Wide Web, the
-                    first web browser, and the fundamental protocols and algorithms allowing the Web to scale. The Turing
-                    Prize, called the "Nobel Prize of Computing" is considered one of the most prestigious awards in
-                    Computer Science.
-                </p>
+                <figure>
+                    <img width="256" alt="Sir Tim Berners-Lee (cropped)" src="SPA-Diagram.gif">
+                    <figcaption>
+                        Tradicional vs SPA
+                    </figcaption>
+                </figure>
+            </div>
+            <p>Este nuevo enfoque implica aumentar la lógica en el lado del cliente, para la cual están comenzando
+                a surgir nuevos frameworks que den soporte a este enfoque como pueden ser AngularJs, Backbone, Reactjs,
+                entre otros.
+
+            </p>
+            <p>Las ventajas de este enfoque, es que todos los datos están disponibles via API. Esto puede ser una gran
+                ventaja por que exponer una api abre posibilidades de nuevas aplicaciones que puedan comunicarse con tu
+                backend. Al ser totalmente independientes, la API puede crecer independientemente de la aplicación
+                permitiendo un mantenimiento totalmente independiente.
+
+            </p>
+            <p>Más ventajas que encontramos es que la aplicación tras cargar el estado y datos iniciales, permite
+                mantenerse comunicada con pequeñas peticiones compactadas en formato JSON que les permite ser
+                generalmente mas rápido y libera al servidor de bastante trabajo. Esto también implica una mayor
+                experiencia de usuario evitando recargas pesadas e innecesarias y una interacción con la web en tiempo
+                real.
+
+            </p>
+            <p>Sin embargo, tampoco todo son ventajas. Ya que bastante lógica del negocio se implementa en el lado
+                cliente, permitiendo que cualquiera pueda leerla en nuestro código javascript, por lo que hay que
+                reforzar la seguridad y trabajar con minificadores js. También debemos de tener en cuenta que de esta
+                manera hacemos trabajar mayormente al navegador. En términos de SEO tampoco es muy eficiente ya que el
+                crawler de Google no soporta javascript volviendo mas complejo el SEO. (Hasta la fecha)
+            </p>
         </section>
         <section class="centered">
-            <p>Actualmente, la web se ha popularizado y extendido a todos los lugares del mundo, y a multitud de
-                dispositivos.</p>
+            <h2>¿Qué tecnologías usamos para producir una SPA?</h2>
+            <p>Esto es muy fácil de responder: Una SPA se realiza en Javascript. No existe ningún otro tipo de lenguaje
+                en el que puedas realizar una SPA, ya que básicamente es una aplicación web que se ejecuta del lado del
+                cliente.</p>
+            <p>Ya luego, dentro de Javascript, existen diversas librerías y frameworks que facilitan mucho el
+                desarrollo de una SPA, entre los que podemos mencionar:
+
+            </p>
+            <ul>
+                <li>AngularJS</li>
+                <li>Angular</li>
+                <li>React</li>
+                <li>Polymer</li>
+                <li>EmberJS</li>
+            </ul>
+            <p>¿Se pueden utilizar otros lenguajes o librerías? ¡Por supuesto! Realmente, depende de los gustos del
+                programador y los requisitos concretos del proyecto. Si también hay que incluir en el desarrollo la
+                parte del lado del servidor o back-end, hay un buen número de opciones; aun así, realmente serviría
+                cualquier lenguaje back-end sobre el que se crear una API REST que devuelva el JSON para alimentar la
+                SPA con los datos.</p>
+        </section>
+        <section class="centered">
+            <h2>Conclusiones sobre las SPA</h2>
+            <p>Las SPA son páginas perfectas para agencias pequeñas, portfolios o aplicaciones, es decir, para PYMES
+                que no tienen mucho contenido. Si las empresas son más grandes y requieren más contenidos sería
+                complicado utilizar una Single Page Application porque habría que concentrar toda la información en una
+                única página.
+                <p> Ahora que ya sabes lo que son las Single Page Application es el momento de pensar si utilizar una
+                    SPA o una web tradicional. Será fundamental para tu empresa que sepas escoger bien para poder
+                    lograr todos tus objetivos. </p>
+            </p>
         </section>
     </main>
     <footer>
