@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE monuments SYSTEM "prerromanico.dtd">
+<?xml-stylesheet href="prerromanico.xsl" type="text/xsl"?>
 <monuments>
     <monument id="Naranco">
         <name>
@@ -110,8 +110,8 @@
             <photo name="Plano" uri="http://www.turismo-prerromanico.com/files/content/MSJPRADOS/MSJPRADOSPLAN1.jpg"/>
         </gallery>
         <gallery>
-            <video name="San Julian 1" uri="https://www.youtube.com/watch?v=fMCOnopVB6c"/>
-            <video name="San Julian 2" uri="https://www.youtube.com/watch?v=U5jqWG97oUs"/>
+            <video name="San Julian 1" uri="https://www.youtube.com/embed/fMCOnopVB6c"/>
+            <video name="San Julian 2" uri="https://www.youtube.com/embed/U5jqWG97oUs"/>
         </gallery>
         <rating>
             7.2
