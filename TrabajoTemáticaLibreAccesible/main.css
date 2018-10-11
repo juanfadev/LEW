@@ -1,0 +1,293 @@
+﻿html { height: 100%; }
+html, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  box-sizing: border-box;
+}
+body { 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  outline: none;
+  box-sizing: border-box;
+  height:100%;
+  background: #f0f0f0;
+  color: #313131;
+  font-size: 62.5%; 
+  line-height: 1; 
+}
+
+
+/* Fonts */ 
+body, input, textarea, select{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .heading{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0 0 20px 0;
+  line-height: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 24px;
+}
+h2, .heading{
+  font-size: 22px;
+}
+h3, h4, h5, h6 {
+  font-size: 18px;
+}
+
+section {
+  font-size: 14px;
+}
+
+/*Fonts*/
+
+/* Tables */
+
+table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top;}
+table, th{table-layout:auto;}
+table{width:100%; margin-bottom:15px;}
+th, td{padding:5px 8px;}
+td{border-width:0 1px;}
+
+/* Tables*/
+
+::selection { background: #a4dcec; }
+ 
+br { display: block; line-height: 2.2em; } 
+ 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav { display: block; margin:0; padding:0; }
+
+ul, ol {
+  padding-left: 2em;
+}
+
+#tophiddenbar ul li {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+ 
+/** page structure **/
+.centered {
+  display: block;
+  width: 750px;
+  margin: 20px auto;
+  padding-top: 30px;
+  
+}
+ 
+main {
+  overflow: scroll;
+}
+
+
+section {
+  display: flex;
+  background: #fff;
+  padding: 25px 20px;
+  padding-bottom: 35px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+section:last-child {
+  margin-bottom: 100px;
+}
+
+#topbar {
+    background: #323b40;
+    color: aqua;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    height: 50px;
+    overflow: hidden;
+    transition: height 0.5s linear;
+  }
+  #topbar a {
+    color: inherit;
+    line-height: 1.25em;
+    text-decoration: none;
+    opacity: 0.5;
+    font-weight: bold;
+  }
+  #topbar a:hover {
+    opacity: 1;
+  }
+   
+  #tophiddenbar {
+    display: block;
+    width: 100%;
+    background: inherit;
+    color: #0ebac7;
+    font-weight: bold;
+    padding: 8px 0; 
+    text-align: center;
+    text-shadow: 1px 1px 0 #444;
+  }
+  #tophiddenbar a {
+    color: inherit;
+    font-size: 18px;
+    text-decoration: none;
+    opacity: 0.5;
+    text-shadow: none;
+  }
+  #tophiddenbar a:hover { opacity: 1; }
+   
+  #topbar:hover { height: 100px; }
+
+  #tophiddenbar ul{
+    list-style: none;
+    display: inline-flex;
+  }
+
+  p {
+    padding-bottom: 1em;
+  }
+
+
+
+  /*Desde aqui tenemos el estilo del footer*/
+
+  footer {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+  }
+  footer object{
+      width: 100%;
+    }
+  footer div.social-media-links {
+    background: #323b40;
+    overflow: hidden;
+    padding-bottom: 2em;
+    text-align: center;
+  }
+  footer div.social-media-links ul {
+    margin: 0;
+    padding: 0;
+  }
+  footer div.social-media-links li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  footer div.social-media-links a {
+    border-bottom: 0px solid rgba(0, 0, 0, 0.95);
+    border-radius: 4px;
+    box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0), 0 6px 8px rgba(0, 0, 0, 0), 0 24px 24px rgba(0, 0, 0, 0), 0 36px 36px rgba(0, 0, 0, 0), 0 64px 64px rgba(0, 0, 0, 0), 0 64px 128px rgba(0, 0, 0, 0), 0 120px 0 rgba(0, 0, 0, 0), 0 86px 8px 6px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 40px;
+    padding: 30px;
+    position: relative;
+    transition: 0.2s ease-in;
+    width: 40px;
+  }
+  footer div.social-media-links a svg {
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    height: 40px;
+    width: 40px;
+  }
+  footer div.social-media-links a svg.glow path,
+  footer div.social-media-links a svg.glow circle {
+    fill: rgba(0, 0, 0, 0);
+  }
+  footer div.social-media-links a svg path,
+  footer div.social-media-links a svg circle {
+    fill: #0096a1;
+    transition: 0.2s ease-in;
+  }
+  footer div.social-media-links a:hover {
+    transform: translateY(-4px);
+    box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.05), 0 24px 24px rgba(0, 0, 0, 0.05), 0 36px 36px rgba(0, 0, 0, 0.05), 0 64px 64px rgba(0, 0, 0, 0.15), 0 64px 128px rgba(0, 0, 0, 0.15), 0 86px 8px 6px rgba(14, 186, 199, 0.25), 0 83px 4px 0px rgba(14, 186, 199, 0.95);
+  }
+  footer div.social-media-links a:hover svg.glow {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><f…ter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
+    filter: blur(2px);
+  }
+  footer div.social-media-links a:hover svg.glow path,
+  footer div.social-media-links a:hover svg.glow circle {
+    fill: rgba(14, 186, 199, 0.6);
+  }
+  footer div.social-media-links a:hover svg path,
+  footer div.social-media-links a:hover svg circle {
+    fill: #0ebac7;
+  }
+
+
+
+  /* Gallery
+--------------------------------------------------------------------------------------------------------------- */
+#gallery{display:block; width:30%;}
+#gallery figure figcaption{display:block; width:100%; clear:both; color: #006363; text-align: center}
+#gallery li{margin-bottom:30px;}
+figure{float:left; margin-right: 1em; margin-bottom: 1em;}
+
+img{width:100%;}
+video{float:left; margin-right: 1em; margin-bottom: 1em;}
+
+
+/* Form */
+
+form {
+    display: block;
+    width: 750px;
+    margin: 0 auto;
+    
+}
+
+input {
+    border-color: #333;
+    width: inherit
+}
+
+textarea {
+    border-color: #333;
+    width: inherit
+}
+
+button {
+    width: 100px;
+}
+
+@media screen and (max-width: 630px){
+  .centered {
+    width: 250px;
+  }
+  form{
+    width: 250px;
+  }
+
+  #topbar {
+    height: 80px;
+  }
+
+  #topbar:hover { height: 150px; }
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 630px){
+  .centered {
+    width: 450px;
+  }
+  form{
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1367px){
+  .centered {
+    width: 1050px;
+  }
+}
